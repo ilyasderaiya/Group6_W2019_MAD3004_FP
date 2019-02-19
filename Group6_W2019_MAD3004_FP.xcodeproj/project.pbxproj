@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		9B4970C7221CC2B200A37944 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4970C6221CC2B200A37944 /* main.swift */; };
 		9B4970CE221CC37500A37944 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4970CD221CC37500A37944 /* User.swift */; };
+		9B4970D0221CC66D00A37944 /* Administrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4970CF221CC66D00A37944 /* Administrator.swift */; };
+		9B4970D2221CC67F00A37944 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4970D1221CC67F00A37944 /* Customer.swift */; };
+		9B4970D4221CC6B400A37944 /* ShippingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4970D3221CC6B400A37944 /* ShippingInfo.swift */; };
+		9B4970D6221CC6C300A37944 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4970D5221CC6C300A37944 /* ShoppingCart.swift */; };
+		9B4970D8221CC6D100A37944 /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4970D7221CC6D100A37944 /* Orders.swift */; };
+		9B4970DB221CC6E200A37944 /* OrderDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4970DA221CC6E200A37944 /* OrderDetails.swift */; };
+		9B4970DD221CC70500A37944 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4970DC221CC70500A37944 /* Products.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +34,13 @@
 		9B4970C3221CC2B200A37944 /* Group6_W2019_MAD3004_FP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group6_W2019_MAD3004_FP; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4970C6221CC2B200A37944 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B4970CD221CC37500A37944 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9B4970CF221CC66D00A37944 /* Administrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Administrator.swift; sourceTree = "<group>"; };
+		9B4970D1221CC67F00A37944 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		9B4970D3221CC6B400A37944 /* ShippingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingInfo.swift; sourceTree = "<group>"; };
+		9B4970D5221CC6C300A37944 /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
+		9B4970D7221CC6D100A37944 /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
+		9B4970DA221CC6E200A37944 /* OrderDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetails.swift; sourceTree = "<group>"; };
+		9B4970DC221CC70500A37944 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +75,13 @@
 			children = (
 				9B4970C6221CC2B200A37944 /* main.swift */,
 				9B4970CD221CC37500A37944 /* User.swift */,
+				9B4970CF221CC66D00A37944 /* Administrator.swift */,
+				9B4970D1221CC67F00A37944 /* Customer.swift */,
+				9B4970D3221CC6B400A37944 /* ShippingInfo.swift */,
+				9B4970D5221CC6C300A37944 /* ShoppingCart.swift */,
+				9B4970D7221CC6D100A37944 /* Orders.swift */,
+				9B4970DA221CC6E200A37944 /* OrderDetails.swift */,
+				9B4970DC221CC70500A37944 /* Products.swift */,
 			);
 			path = Group6_W2019_MAD3004_FP;
 			sourceTree = "<group>";
@@ -122,8 +143,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B4970DD221CC70500A37944 /* Products.swift in Sources */,
+				9B4970D0221CC66D00A37944 /* Administrator.swift in Sources */,
+				9B4970D8221CC6D100A37944 /* Orders.swift in Sources */,
+				9B4970D6221CC6C300A37944 /* ShoppingCart.swift in Sources */,
 				9B4970CE221CC37500A37944 /* User.swift in Sources */,
 				9B4970C7221CC2B200A37944 /* main.swift in Sources */,
+				9B4970D2221CC67F00A37944 /* Customer.swift in Sources */,
+				9B4970D4221CC6B400A37944 /* ShippingInfo.swift in Sources */,
+				9B4970DB221CC6E200A37944 /* OrderDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
