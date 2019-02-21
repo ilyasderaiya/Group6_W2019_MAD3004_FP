@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+class Administrator{
+    var adminName: String
+    var email: String
+    
+    init(){
+        self.adminName = String()
+        self.email = String()
+    }
+    
+    init(adName: String, Email: String){
+        self.adminName = adName
+        self.email = Email
+    }
+    
+    func updateCatalog() -> Bool {
+        return true
+    }
+}
