@@ -16,6 +16,8 @@
 		9B4970D8221CC6D100A37944 /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4970D7221CC6D100A37944 /* Orders.swift */; };
 		9B4970DB221CC6E200A37944 /* OrderDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4970DA221CC6E200A37944 /* OrderDetails.swift */; };
 		9B4970DD221CC70500A37944 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4970DC221CC70500A37944 /* Products.swift */; };
+		C6579B082220936B0060D376 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6579B072220936B0060D376 /* Extension.swift */; };
+		C6579B0A222096F40060D376 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6579B09222096F40060D376 /* IDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +43,8 @@
 		9B4970D7221CC6D100A37944 /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
 		9B4970DA221CC6E200A37944 /* OrderDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetails.swift; sourceTree = "<group>"; };
 		9B4970DC221CC70500A37944 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		C6579B072220936B0060D376 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		C6579B09222096F40060D376 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				9B4970D7221CC6D100A37944 /* Orders.swift */,
 				9B4970DA221CC6E200A37944 /* OrderDetails.swift */,
 				9B4970DC221CC70500A37944 /* Products.swift */,
+				C6579B072220936B0060D376 /* Extension.swift */,
+				C6579B09222096F40060D376 /* IDisplay.swift */,
 			);
 			path = Group6_W2019_MAD3004_FP;
 			sourceTree = "<group>";
@@ -150,8 +156,10 @@
 				9B4970D8221CC6D100A37944 /* Orders.swift in Sources */,
 				9B4970D6221CC6C300A37944 /* ShoppingCart.swift in Sources */,
 				9B4970CE221CC37500A37944 /* User.swift in Sources */,
+				C6579B082220936B0060D376 /* Extension.swift in Sources */,
 				9B4970C7221CC2B200A37944 /* main.swift in Sources */,
 				9B4970D2221CC67F00A37944 /* Customer.swift in Sources */,
+				C6579B0A222096F40060D376 /* IDisplay.swift in Sources */,
 				9B4970D4221CC6B400A37944 /* ShippingInfo.swift in Sources */,
 				9B4970DB221CC6E200A37944 /* OrderDetails.swift in Sources */,
 			);

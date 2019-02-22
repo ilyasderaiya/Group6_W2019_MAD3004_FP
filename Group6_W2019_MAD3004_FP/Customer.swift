@@ -8,19 +8,23 @@
 
 import Foundation
 
-class Customer{
+class Customer: User {
     var customerName: String
     var address: String
     var email: String
     var creditCardInfo: String
     var shippingInfo: String
+    var ordr = [Orders]()
+    var shopCart = [ShoppingCart]()
     
-    init(){
+    
+    override init(){
         self.customerName = String()
         self.address = String()
         self.email = String()
         self.creditCardInfo = String()
         self.shippingInfo = String()
+        super.init()
     }
     
     init(cusName: String, cusAddress: String, cusEmail: String, ccInfo: String, shipInfo: String) {
@@ -29,6 +33,7 @@ class Customer{
         self.email = cusEmail
         self.creditCardInfo = ccInfo
         self.shippingInfo = shipInfo
+        super.init(uId: <#T##String#>, pass: <#T##String#>, lstatus: <#T##String#>)
     }
     
     
