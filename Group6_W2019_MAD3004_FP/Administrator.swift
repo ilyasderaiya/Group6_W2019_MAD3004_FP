@@ -8,18 +8,20 @@
 
 import Foundation
 
-class Administrator{
+class Administrator: User{
     var adminName: String
     var email: String
     
-    init(){
+    override init(){
         self.adminName = String()
         self.email = String()
+        super.init()
     }
     
-    init(adName: String, Email: String){
+    init(adName: String, Email: String, userId: String, pass: String){
         self.adminName = adName
         self.email = Email
+        super.init(uId: userId, pass: pass, lstatus: "Active")
     }
     
     func updateCatalog() -> Bool {

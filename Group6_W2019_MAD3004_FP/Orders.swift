@@ -30,7 +30,26 @@ class Orders: IDisplay{
         self.shippingId=String()
     }
     
+    init (orId: Int, dtCreate: String, dtShip: String, cxName: String, cxId: String, Status: String, ShippinId: String)
+    {
+        self.orderId = orId
+        self.dateCreated = dtCreate
+        self.dateShipped = dtShip
+        self.customerName = cxName
+        self.customerId = cxId
+        self.status = Status
+        self.shippingId = ShippinId
+    }
+    
     func displayData(){
         
+        print("-----------Order Details-------------")
+        print("Order ID: \(self.orderId)")
+        print("Order Date: \(self.dateCreated)")
+        print("Shipping Date: \(self.dateShipped)")
+        print("Customer Name: \(self.customerName)")
+        print("Customer ID: \(self.customerId)")
+        print("Order Status: \(self.status)")
+        print("Shipping ID: \(self.shippingId)")
     }
 }

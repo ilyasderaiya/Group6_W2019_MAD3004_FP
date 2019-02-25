@@ -79,8 +79,8 @@
 			children = (
 				9B4970C6221CC2B200A37944 /* main.swift */,
 				9B4970CD221CC37500A37944 /* User.swift */,
-				9B4970CF221CC66D00A37944 /* Administrator.swift */,
 				9B4970D1221CC67F00A37944 /* Customer.swift */,
+				9B4970CF221CC66D00A37944 /* Administrator.swift */,
 				9B4970D3221CC6B400A37944 /* ShippingInfo.swift */,
 				9B4970D5221CC6C300A37944 /* ShoppingCart.swift */,
 				9B4970D7221CC6D100A37944 /* Orders.swift */,

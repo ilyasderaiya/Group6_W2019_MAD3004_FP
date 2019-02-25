@@ -27,18 +27,31 @@ class Customer: User {
         super.init()
     }
     
-    init(cusName: String, cusAddress: String, cusEmail: String, ccInfo: String, shipInfo: String) {
+    init(uID: String, pass: String, lstatus: String, cusName: String, cusAddress: String, cusEmail: String, ccInfo: String, shipInfo: String) {
         self.customerName = cusName
         self.address = cusAddress
         self.email = cusEmail
         self.creditCardInfo = ccInfo
         self.shippingInfo = shipInfo
-        super.init(uId: <#T##String#>, pass: <#T##String#>, lstatus: <#T##String#>)
+        super.init(uId: uID, pass: pass, lstatus: lstatus)
     }
     
     
-    func register(){
+    func register(CustomerName: String, Address: String, eMail: String, CreditCardInfo: String, ShippingInfo: String, userId: String, password: String, loginStatus: String) -> Bool
+    {
         
+        // Validations
+        
+        self.customerName = CustomerName
+        self.address = Address
+        self.email = eMail
+        self.creditCardInfo = CreditCardInfo
+        self.shippingInfo = ShippingInfo
+        super.userId = userId
+        super.password = password
+        
+        
+        return true
     }
     
     func login(){

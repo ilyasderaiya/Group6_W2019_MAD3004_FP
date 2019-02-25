@@ -28,13 +28,27 @@ class ShoppingCart{
         self.dateAdded = dateAdd
     }
     
-    func addCartItem(){
-        
+    func addCartItem(customer : Customer)
+    {
+        let dd = ShoppingCart(cId: self.cardId, pId: self.productId, qnty: self.quantity, dateAdd: self.dateAdded)
+        customer.shopCart.append(dd)
     }
     
-    func updateQuantity(){
-        
+    func updateQuantity(customer : Customer, newQty : Int) -> Bool
+    {
+        print("Customer Items------>:")
+        for c in customer.shopCart
+        {
+            print("Item:",c.productId)
+            if c.cardId == self.cardId
+            {
+                c.quantity = newQty
+                return true
+            }
+        }
+        return false
     }
+    
     
     func cartDetails(){
     
