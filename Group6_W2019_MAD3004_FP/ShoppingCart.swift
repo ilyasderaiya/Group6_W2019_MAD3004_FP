@@ -9,20 +9,20 @@
 import Foundation
 
 class ShoppingCart{
-    var cardId: Int
+    var cartId: Int
     var productId: Int
     var quantity: Int
     var dateAdded: Date
     
     init(){
-        self.cardId = 0
+        self.cartId = 0
         self.productId = 0
         self.quantity = 0
         self.dateAdded = Date()
     }
     
     init(cId: Int, pId: Int, qnty: Int, dateAdd: Date){
-        self.cardId = cId
+        self.cartId = cId
         self.productId = pId
         self.quantity = qnty
         self.dateAdded = dateAdd
@@ -30,7 +30,7 @@ class ShoppingCart{
     
     func addCartItem(customer : Customer)
     {
-        let dd = ShoppingCart(cId: self.cardId, pId: self.productId, qnty: self.quantity, dateAdd: self.dateAdded)
+        let dd = ShoppingCart(cId: self.cartId, pId: self.productId, qnty: self.quantity, dateAdd: self.dateAdded)
         customer.shopCart.append(dd)
     }
     
@@ -40,7 +40,7 @@ class ShoppingCart{
         for c in customer.shopCart
         {
             print("Item:",c.productId)
-            if c.cardId == self.cardId
+            if c.cartId == self.cartId
             {
                 c.quantity = newQty
                 return true
@@ -51,7 +51,10 @@ class ShoppingCart{
     
     
     func cartDetails(){
-    
+        print("----------Shopping Cart Details----------")
+        print("Cart Id: \(self.cartId)")
+        print("Product Id: \(String(describing: self.productId))")
+        print("Date Added: \(self.dateAdded)")
     }
     
     func checkout(){
