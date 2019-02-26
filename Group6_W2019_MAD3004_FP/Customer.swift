@@ -9,11 +9,11 @@
 import Foundation
 
 class Customer: User {
-    var customerName: String
-    var address: String
-    var email: String
-    var creditCardInfo: String
-    var shippingInfo: String
+    var customerName: String!
+    var address: String!
+    var email: String!
+    var creditCardInfo: String!
+    var shippingInfo: String!
     var ordr = [Orders]()
     var shopCart = [ShoppingCart]()
     
@@ -24,16 +24,15 @@ class Customer: User {
         self.email = String()
         self.creditCardInfo = String()
         self.shippingInfo = String()
+        self.ordr = [Orders]()
+        self.shopCart = [ShoppingCart]()
         super.init()
     }
     
-    init(uID: String, pass: String, lstatus: String, cusName: String, cusAddress: String, cusEmail: String, ccInfo: String, shipInfo: String) {
-        self.customerName = cusName
-        self.address = cusAddress
-        self.email = cusEmail
-        self.creditCardInfo = ccInfo
-        self.shippingInfo = shipInfo
-        super.init(uId: uID, pass: pass, lstatus: lstatus)
+    override init(uId: String, pass: String, lstatus: String) {
+        self.ordr = [Orders]()
+        self.shopCart = [ShoppingCart]()
+        super.init(uId: uId, pass: pass, lstatus: lstatus)
     }
     
     
@@ -65,7 +64,7 @@ class Customer: User {
         {
             if i.userId == self.userId
             {
-                i.customerName       = self.customerName
+                i.customerName   = self.customerName
                 i.address        = self.address
                 i.email          = self.email
                 i.shippingInfo   = self.shippingInfo
