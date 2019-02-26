@@ -9,19 +9,19 @@
 import Foundation
 
 class Products{
-    var productId:Int
-    var productName:String
-    var productPrice:Float
+    var productId: Int
+    var productName: String
+    var productPrice: Double
     
     
     init(){
-        self.productId=0
-        self.productName=String()
-        self.productPrice=0.0
+        self.productId = 0
+        self.productName = String()
+        self.productPrice = Double()
     }
     
     
-    init(productId:Int,productName:String,productQuantity:Int,productPrice:Float){
+    init(productId: Int,productName: String ,productPrice: Double){
         self.productId=productId
         self.productName=productName
         self.productPrice=productPrice
