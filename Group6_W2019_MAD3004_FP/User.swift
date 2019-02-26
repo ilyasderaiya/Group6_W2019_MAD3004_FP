@@ -13,11 +13,13 @@ class User{
     var userId:String
     var password:String
     var loginStatus:String
+    
     init(){
         self.userId = String()
         self.password = String()
-        self.loginStatus = String()
+        self.loginStatus = "Registered"
     }
+    
     init(uId:String, pass:String, lstatus:String){
         self.userId = uId
         self.password = pass
@@ -27,7 +29,7 @@ class User{
     
     func verifyLogin(customers:[Customer], user : Customer) -> Bool
     {
-        //Validate customer.userId and customer.password in customers
+        //Validate
         for i in customers
         {
             if i.userId == user.userId
