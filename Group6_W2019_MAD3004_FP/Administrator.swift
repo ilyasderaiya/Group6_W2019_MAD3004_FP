@@ -24,7 +24,7 @@ class Administrator: User{
         super.init(uId: userId, pass: pass, lstatus: "Active")
     }
     
-    func updateCatalog() -> Bool {
+    func updateCatalog(products: [Products], updProduct: Products) -> Bool {
         return true
     }
 }
