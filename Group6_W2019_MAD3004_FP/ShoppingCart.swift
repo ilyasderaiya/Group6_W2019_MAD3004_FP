@@ -10,18 +10,18 @@ import Foundation
 
 class ShoppingCart{
     var cartId: Int
-    var productId: Int
+    var productId: Products?
     var quantity: Int
     var dateAdded: Date
     
     init(){
         self.cartId = 0
-        self.productId = 0
+        self.productId = Products()
         self.quantity = 0
         self.dateAdded = Date()
     }
     
-    init(cId: Int, pId: Int, qnty: Int, dateAdd: Date){
+    init(cId: Int, pId: Products, qnty: Int, dateAdd: Date){
         self.cartId = cId
         self.productId = pId
         self.quantity = qnty
@@ -30,7 +30,7 @@ class ShoppingCart{
     
     func addCartItem(customer : Customer)
     {
-        let dd = ShoppingCart(cId: self.cartId, pId: self.productId, qnty: self.quantity, dateAdd: self.dateAdded)
+        let dd = ShoppingCart(cId: self.cartId, pId: self.productId!, qnty: self.quantity, dateAdd: self.dateAdded)
         customer.shopCart.append(dd)
     }
     
@@ -39,7 +39,7 @@ class ShoppingCart{
         print("Customer Items------>:")
         for c in customer.shopCart
         {
-            print("Item:",c.productId)
+            print("Item:",c.productId!)
             if c.cartId == self.cartId
             {
                 c.quantity = newQty
@@ -53,7 +53,7 @@ class ShoppingCart{
     func cartDetails(){
         print("----------Shopping Cart Details----------")
         print("Cart Id: \(self.cartId)")
-        print("Product Id: \(String(describing: self.productId))")
+        print("Product Id: \(String(describing: self.productId!.productId)) --- \(String(describing: self.productId!.productName))")
         print("Date Added: \(self.dateAdded)")
     }
     
