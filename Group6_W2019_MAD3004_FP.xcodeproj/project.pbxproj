@@ -33,7 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9B4970C3221CC2B200A37944 /* Group6_W2019_MAD3004_FP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group6_W2019_MAD3004_FP; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4970C3221CC2B200A37944 /* Group6_W2019_MAD3004_FP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = Group6_W2019_MAD3004_FP; path = /Users/ilyasderaiya/Desktop/Group6_W2019_MAD3004_FP/build/Debug/Group6_W2019_MAD3004_FP; sourceTree = "<absolute>"; };
 		9B4970C6221CC2B200A37944 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B4970CD221CC37500A37944 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9B4970CF221CC66D00A37944 /* Administrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Administrator.swift; sourceTree = "<group>"; };
@@ -62,16 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				9B4970C5221CC2B200A37944 /* Group6_W2019_MAD3004_FP */,
-				9B4970C4221CC2B200A37944 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		9B4970C4221CC2B200A37944 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9B4970C3221CC2B200A37944 /* Group6_W2019_MAD3004_FP */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		9B4970C5221CC2B200A37944 /* Group6_W2019_MAD3004_FP */ = {
@@ -137,7 +128,7 @@
 				Base,
 			);
 			mainGroup = 9B4970BA221CC2B200A37944;
-			productRefGroup = 9B4970C4221CC2B200A37944 /* Products */;
+			productRefGroup = 9B4970BA221CC2B200A37944;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
