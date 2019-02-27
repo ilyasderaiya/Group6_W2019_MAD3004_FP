@@ -113,6 +113,7 @@ cartItem5.addCartItem(customer: user1)
 
 
 print("\n------------------- displaying Items:------------------ \n")
+print("----------Shopping Cart Details----------")
 for c in user1.shopCart
 {
     c.cartDetails()
@@ -125,7 +126,8 @@ if !result3
 {
     print("Update Failed")
 }
-print("\n--------------------Display List Updated--------------------- \n")
+print("\n--------------------Display Updated Cart Details--------------------- \n")
+print("----------Shopping Cart Details----------")
 for c in user1.shopCart
 {
     c.cartDetails()

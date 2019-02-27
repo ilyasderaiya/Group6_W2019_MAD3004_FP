@@ -10,9 +10,9 @@ import Foundation
 
 
 class User{
-    var userId:String?
-    var password:String?
-    var loginStatus:String?
+    var userId:String!
+    var password:String!
+    var loginStatus:String!
     
     init(){
         self.userId = String()

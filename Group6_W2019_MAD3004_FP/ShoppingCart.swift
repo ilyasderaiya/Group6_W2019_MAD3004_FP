@@ -49,11 +49,16 @@ class ShoppingCart{
     
     
     func cartDetails(){
-        print("----------Shopping Cart Details----------")
+        //print("----------Shopping Cart Details----------")
         print("Cart Id: \(self.cartId)")
         print("Product Id: \(String(describing: self.productId!.productId)) --- \(String(describing: self.productId!.productName))")
+        print("Product Price: \(String(describing: self.productId!.productPrice))")
         print("Date Added: \(self.dateAdded)")
         print("Quantity: \(self.quantity)")
+    }
+    
+    func ordrTotal(){
+        
     }
     
     func checkout(){

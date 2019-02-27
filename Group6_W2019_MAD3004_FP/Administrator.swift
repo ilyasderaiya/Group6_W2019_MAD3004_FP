@@ -9,8 +9,8 @@
 import Foundation
 
 class Administrator: User{
-    var adminName: String?
-    var email: String?
+    var adminName: String!
+    var email: String!
     
     override init(){
         self.adminName = String()
