@@ -70,7 +70,7 @@ class Customer: User {
                 i.shippingInfo   = self.shippingInfo
                 i.creditCardInfo = self.creditCardInfo
                 i.loginStatus    = "Profile Updated"
-                print("---------------Profile Updated---------------")
+                print("\n---------------Profile Updated--------------- \n")
                 i.displayData()
                 return true
             }

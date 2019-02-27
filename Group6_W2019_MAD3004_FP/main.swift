@@ -111,7 +111,7 @@ cartItem5.addCartItem(customer: user1)
 
 
 
-print("\n displaying Items:")
+print("\n------------------- displaying Items:------------------ \n")
 for c in user1.shopCart
 {
     c.cartDetails()
@@ -119,11 +119,12 @@ for c in user1.shopCart
 
 
 // Customer update quantity of 1 product
-if !cartItem5.updateQuantity(customer: user1, newQty: 2)
+var result3 = cartItem5.updateQuantity(customer: user1, newQty: 2)
+if !result3
 {
     print("Update Failed")
 }
-print("Display List Updated")
+print("\n--------------------Display List Updated--------------------- \n")
 for c in user1.shopCart
 {
     c.cartDetails()
