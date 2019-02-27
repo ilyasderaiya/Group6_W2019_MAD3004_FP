@@ -17,7 +17,6 @@ class Orders: IDisplay{
     var status:String
     var shippingId:String
     var si = [ShippingInfo]()   //ShippingInfo()
-    var od = [OrderDetails]()//OrderDetails()
     
     init()
     {

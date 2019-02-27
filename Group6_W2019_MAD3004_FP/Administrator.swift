@@ -9,8 +9,8 @@
 import Foundation
 
 class Administrator: User{
-    var adminName: String
-    var email: String
+    var adminName: String?
+    var email: String?
     
     override init(){
         self.adminName = String()
@@ -20,7 +20,13 @@ class Administrator: User{
     
     init(adName: String, Email: String, userId: String, pass: String){
         self.adminName = adName
-        self.email = Email
+        
+        if Email.verifyEmail(){
+            self.email = Email
+        }else{
+            print("Enter a Valid Email")
+            self.email = String()
+        }
         super.init(uId: userId, pass: pass, lstatus: "Active")
     }
     

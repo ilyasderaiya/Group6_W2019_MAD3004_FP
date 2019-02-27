@@ -10,9 +10,9 @@ import Foundation
 
 
 class User{
-    var userId:String
-    var password:String
-    var loginStatus:String
+    var userId:String?
+    var password:String?
+    var loginStatus:String?
     
     init(){
         self.userId = String()
@@ -22,7 +22,13 @@ class User{
     
     init(uId:String, pass:String, lstatus:String){
         self.userId = uId
-        self.password = pass
+        
+        if pass.isValidPassword(){
+            self.password = pass
+        }else{
+            print("Enter a valid Password with 6 character")
+        }
+        
         self.loginStatus = lstatus
     }
     

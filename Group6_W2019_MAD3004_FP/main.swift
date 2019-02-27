@@ -11,7 +11,8 @@ import Foundation
 
 
 // Creating Administrator user
-var adm1 = Administrator(adName: "Ilyas ", Email: "ilyasderaiya@gmail.com", userId: "ilyasderaiya", pass: "abc")
+var adm = Administrator(adName: "Ayub ", Email: "9ayub@gmail", userId: "Ayub", pass: "abcd")
+var adm1 = Administrator(adName: "Ilyas ", Email: "ilyasderaiya@gmail.com", userId: "ilyasderaiya", pass: "Abcd12345")
 
 // Creating products
 var p1 = Products(productId: 01, productName: "Macbook Pro w/TouchBar", productPrice: 2200.0)
@@ -29,7 +30,7 @@ products.append(p5)
 
 //Display Product Data
 for i in products{
-    i.dispayData()
+    i.displayData()
 }
 
 //Updating 1 product
@@ -45,7 +46,7 @@ if adm1.updateCatalog(products: products, updProduct: pUpdated)
 
 //Display Products after Update
 for i in products{
-    i.dispayData()
+    i.displayData()
 }
 
 // Creating customer users
@@ -80,7 +81,7 @@ if user1.verifyLogin(customers: customers, user: user1)
 }
 else
 {
-    print(user1.loginStatus)
+    print(user1.loginStatus!)
 }
 
 // Update customer info
