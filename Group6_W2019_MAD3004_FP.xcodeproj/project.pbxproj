@@ -33,7 +33,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9B4970C3221CC2B200A37944 /* Group6_W2019_MAD3004_FP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = Group6_W2019_MAD3004_FP; path = /Users/ilyasderaiya/Desktop/Group6_W2019_MAD3004_FP/build/Debug/Group6_W2019_MAD3004_FP; sourceTree = "<absolute>"; };
 		9B4970C6221CC2B200A37944 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B4970CD221CC37500A37944 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9B4970CF221CC66D00A37944 /* Administrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Administrator.swift; sourceTree = "<group>"; };
@@ -43,6 +42,7 @@
 		9B4970D7221CC6D100A37944 /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
 		9B4970DA221CC6E200A37944 /* OrderDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetails.swift; sourceTree = "<group>"; };
 		9B4970DC221CC70500A37944 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		9BA4C55022260D5C001ED8B4 /* Group6_W2019_MAD3004_FP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group6_W2019_MAD3004_FP; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6579B072220936B0060D376 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		C6579B09222096F40060D376 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				9B4970C5221CC2B200A37944 /* Group6_W2019_MAD3004_FP */,
+				9BA4C55022260D5C001ED8B4 /* Group6_W2019_MAD3004_FP */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,7 +101,7 @@
 			);
 			name = Group6_W2019_MAD3004_FP;
 			productName = Group6_W2019_MAD3004_FP;
-			productReference = 9B4970C3221CC2B200A37944 /* Group6_W2019_MAD3004_FP */;
+			productReference = 9BA4C55022260D5C001ED8B4 /* Group6_W2019_MAD3004_FP */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -279,7 +280,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -288,7 +289,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

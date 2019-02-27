@@ -34,9 +34,12 @@ for i in products{
 
 //Updating 1 product
 let pUpdated = Products(productId: 05, productName: "Iphone 7 Plus", productPrice: 700.0)
+
+
 if adm1.updateCatalog(products: products, updProduct: pUpdated)
 {
     print("Product Updated Succesfully")
+    products[4] = pUpdated
 }
 
 
@@ -89,8 +92,6 @@ if !user1.updateProfile(customers: customers)
     print("Record Updation Failed")
 }
 
-// Display Updated Data
-user1.displayData()
 
 // customer add 5 products to Shopping Cart
 var cartItem1 = ShoppingCart(cId: 1, pId: p1, qnty: 2, dateAdd: Date())
