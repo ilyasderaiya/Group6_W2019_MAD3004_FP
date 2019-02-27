@@ -9,6 +9,8 @@
 import Foundation
 
 extension String{
+    
+    // https://stackoverflow.com/questions/25471114/how-to-validate-an-e-mail-address-in-swift
     func verifyEmail() -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
@@ -16,10 +18,9 @@ extension String{
     }
     
     
-    
+    // https://stackoverflow.com/questions/39444469/swift-password-validation-can-anyone-tell-me-the-meaning-of-these-lines
     func isValidPassword() -> Bool {
-        // guard self != nil else { return false }
-        
+                
         // at least one uppercase,
         // at least one digit
         // at least one lowercase

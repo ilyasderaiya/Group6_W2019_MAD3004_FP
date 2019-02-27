@@ -26,7 +26,7 @@ class User{
         if pass.isValidPassword(){
             self.password = pass
         }else{
-            print("Enter a valid Password with 6 character")
+            print("Enter a valid Password with 8 character and One Upper and one lower Case letter")
         }
         
         self.loginStatus = lstatus
