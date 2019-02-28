@@ -87,11 +87,11 @@ class Customer: User, IDisplay {
     
     func displayData(){
         print("--------------Customer Details------------")
-        print("Customer Name: \(String(describing: self.customerName))")
-        print("Customer Address: \(String(describing: self.address))")
-        print("Customer Email: \(String(describing: self.email))")
-        print("Customer Credit Card: \(String(describing: self.creditCardInfo))")
-        print("Shipping: \(String(describing: self.shippingInfo))")
+        print("Customer Name: \(self.customerName!)")
+        print("Customer Address: \(self.address!)")
+        print("Customer Email: \(self.email!)")
+        print("Customer Credit Card: \(self.creditCardInfo!)")
+        print("Shipping: \(self.shippingInfo!)")
     }
     
 }
