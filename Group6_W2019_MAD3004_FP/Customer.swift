@@ -79,6 +79,12 @@ class Customer: User, IDisplay {
         return false
     }
     
+    func checkout(){
+        let order = Orders(orId: ordr.count+1, dtCreate: Date(), dtShip: Date(), cxName: self.customerName, cxId: self.userId , Status: "Order Created")
+        self.ordr.append(order)
+        order.displayData()
+    }
+    
     func displayData(){
         print("--------------Customer Details------------")
         print("Customer Name: \(String(describing: self.customerName))")

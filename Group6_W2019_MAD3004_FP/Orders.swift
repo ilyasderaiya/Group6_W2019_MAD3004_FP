@@ -10,26 +10,25 @@ import Foundation
 
 class Orders: IDisplay{
     var orderId:Int
-    var dateCreated:String
-    var dateShipped:String
+    var dateCreated:Date
+    var dateShipped:Date
     var customerName:String
     var customerId:String
     var status:String
-    var shippingId:String
     var si = [ShippingInfo]()   //ShippingInfo()
     
     init()
     {
         self.orderId=0
-        self.dateCreated=String()
-        self.dateShipped=String()
+        self.dateCreated=Date()
+        self.dateShipped=Date()
         self.customerName=String()
         self.customerId=String()
         self.status=String()
-        self.shippingId=String()
+       
     }
     
-    init (orId: Int, dtCreate: String, dtShip: String, cxName: String, cxId: String, Status: String, ShippinId: String)
+    init (orId: Int, dtCreate: Date, dtShip: Date, cxName: String, cxId: String, Status: String)
     {
         self.orderId = orId
         self.dateCreated = dtCreate
@@ -37,7 +36,7 @@ class Orders: IDisplay{
         self.customerName = cxName
         self.customerId = cxId
         self.status = Status
-        self.shippingId = ShippinId
+        
     }
     
     func displayData(){
@@ -49,6 +48,6 @@ class Orders: IDisplay{
         print("Customer Name: \(self.customerName)")
         print("Customer ID: \(self.customerId)")
         print("Order Status: \(self.status)")
-        print("Shipping ID: \(self.shippingId)")
+       // print("Shipping ID: \(self.shippingId)")
     }
 }

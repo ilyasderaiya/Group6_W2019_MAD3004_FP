@@ -13,6 +13,8 @@ import Foundation
 // Creating Administrator user
 var adm = Administrator(adName: "Ayub ", Email: "9ayub@gmail", userId: "Ayub", pass: "abcd")
 var adm1 = Administrator(adName: "Ilyas ", Email: "ilyasderaiya@gmail.com", userId: "ilyasderaiya", pass: "Abcd12345")
+adm1.displayData()
+
 
 // Creating products
 var p1 = Products(productId: 01, productName: "Macbook Pro w/TouchBar", productPrice: 2200.0)
@@ -132,6 +134,14 @@ for c in user1.shopCart
 {
     c.cartDetails()
 }
+
+
+// Checkout
+print("Display Order Details")
+user1.checkout()
+
+
+
 
 print("---------------------END---------------------")
 

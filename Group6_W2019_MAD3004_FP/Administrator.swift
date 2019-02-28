@@ -24,7 +24,7 @@ class Administrator: User{
         if Email.verifyEmail(){
             self.email = Email
         }else{
-            print("Enter a Valid Email")
+            print("Enter a Valid Email for \(self.adminName!)")
             self.email = String()
         }
         super.init(uId: userId, pass: pass, lstatus: "Active")
@@ -32,5 +32,11 @@ class Administrator: User{
     
     func updateCatalog(products: [Products], updProduct: Products) -> Bool {
         return true
+    }
+    
+    func displayData(){
+        print("-------------------------------")
+        print("Admin Name: \(self.adminName!)")
+        print("Admin Email: \(self.email!)")
     }
 }
