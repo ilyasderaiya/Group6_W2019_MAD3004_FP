@@ -12,8 +12,53 @@ import Foundation
 
 // Creating Administrator user
 var adm = Administrator(adName: "Ayub ", Email: "9ayub@gmail", userId: "Ayub", pass: "abcd")
-var adm1 = Administrator(adName: "Ilyas ", Email: "ilyasderaiya@gmail.com", userId: "ilyasderaiya", pass: "Abcd12345")
+var adm1 = Administrator(adName: "Ilyas ", Email: "ilyasderaiya@gmail.com", userId: "ilyasderaiya", pass: "Ilyas12345")
 adm1.displayData()
+
+
+// Creating customer users
+var customers = [Customer]()
+
+var cust1 = Customer()
+var cust2 = Customer()
+var result1 = cust1.register(CustomerName: "Shivani", Address: "5 scarboro St.", eMail: "shivani@gmail.com", CreditCardInfo: "1234 4567 3534 5433", ShippingInfo: "same address", userId: "shivani", password: "123", loginStatus: "Registered")
+if result1
+{
+    customers.append(cust1)
+}
+var result2 = cust2.register(CustomerName: "Abhishekl T", Address: "56 Torbram Rd.", eMail: "abishekt@gmail.com", CreditCardInfo: "1558 4247 6854 8856", ShippingInfo: "same address", userId: "Abhi", password: "Abhi98765", loginStatus: "Registered")
+if result2
+{
+    customers.append(cust2)
+}
+
+//Displaying Customers
+for i in customers
+{
+    i.displayData()
+}
+
+// Accesing with user info
+var user1 = Customer(uId:"Abhi", pass: "Abhi98765", lstatus: "Accessing")
+
+if user1.verifyLogin(customers: customers, user: user1)
+{
+    
+    print("Welcome: \( user1.customerName!)")
+}
+else
+{
+    print(user1.loginStatus!)
+}
+
+// Update customer info
+user1.address = "56 Tomken Rd, ON"
+user1.customerName = "Abhishek T."
+
+if !user1.updateProfile(customers: customers)
+{
+    print("Record Updation Failed")
+}
 
 
 // Creating products
@@ -51,49 +96,6 @@ for i in products{
     i.displayData()
 }
 
-// Creating customer users
-var customers = [Customer]()
-
-var cust1 = Customer()
-var cust2 = Customer()
-var result1 = cust1.register(CustomerName: "Shivani", Address: "5 scarboro St.", eMail: "shivani@gmail.com", CreditCardInfo: "1234 4567 3534 5433", ShippingInfo: "same address", userId: "shivani", password: "123", loginStatus: "Registered")
-if result1
-{
-    customers.append(cust1)
-}
-var result2 = cust2.register(CustomerName: "Abhishekl T", Address: "56 Torbram Rd.", eMail: "abishekt@gmail.com", CreditCardInfo: "1558 4247 6854 8856", ShippingInfo: "same address", userId: "Abhi", password: "123", loginStatus: "Registered")
-if result2
-{
-    customers.append(cust2)
-}
-
-//Displaying Customers
-for i in customers
-{
-    i.displayData()
-}
-
-// Accesing with user info
-var user1 = Customer(uId:"Abhi", pass: "123", lstatus: "Accessing")
-
-if user1.verifyLogin(customers: customers, user: user1)
-{
-    
-    print("Welcome: \(String(describing: user1.customerName))")
-}
-else
-{
-    print(user1.loginStatus!)
-}
-
-// Update customer info
-user1.address = "56 Tomken Rd, ON"
-user1.customerName = "Abhishek T."
-
-if !user1.updateProfile(customers: customers)
-{
-    print("Record Updation Failed")
-}
 
 
 // customer add 5 products to Shopping Cart

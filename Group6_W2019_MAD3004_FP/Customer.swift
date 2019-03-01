@@ -43,7 +43,13 @@ class Customer: User, IDisplay {
         
         self.customerName = CustomerName
         self.address = Address
-        self.email = eMail
+        if eMail.verifyEmail(){
+        
+            self.email = eMail
+        }else{
+            print("Enter a valid Email")
+        }
+        
         self.creditCardInfo = CreditCardInfo
         self.shippingInfo = ShippingInfo
         super.userId = userId
